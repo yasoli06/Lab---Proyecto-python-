@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Crear Terrario y agregar serpientes</h1>
+    <form id="terrario-form">
+        <h2>Información del Terrario</h2>
+        <label for="terrario-nombre">Nombre:</label>
+        <input type="text" id="terrario-nombre" name="terrario-nombre" required><br>
+        <label for="terrario-ancho">Ancho:</label>
+        <input type="number" id="terrario-ancho" name="terrario-ancho" required><br>
+        <label for="terrario-largo">Largo:</label>
+        <input type="number" id="terrario-largo" name="terrario-largo" required><br>
+        
+        <h2>Información de las serpientes</h2>
+        <div id="serpientes-container">
+            <div>
+                <label for="serpiente-nombre-1">Nombre:</label>
+                <input type="text" id="serpiente-nombre-1" name="serpiente-nombre" required><br>
+                <label for="serpiente-longitud-1">Longitud:</label>
+                <input type="number" id="serpiente-longitud-1" name="serpiente-longitud" required><br>
+                <label for="serpiente-especie-1">Especie:</label>
+                <input type="text" id="serpiente-especie-1" name="serpiente-especie" required><br>
+            </div>
+        </div>
+        <button type="button" id="agregar-serpiente">Agregar otra serpiente</button><br><br>
+        <button type="submit">Guardar</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
