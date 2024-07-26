@@ -4,7 +4,7 @@ import json
 app = Flask(__name__)
 
 class Terrario:
-    def __init__(self, nombre, ancho, largo, habitantes):
+    def __init__(self, nombre, ancho, largo):
         self.nombre = nombre
         self.ancho = ancho
         self.largo = largo
